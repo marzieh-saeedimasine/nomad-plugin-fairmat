@@ -130,6 +130,7 @@ package-dir = { "" = "src" }
 where = ["src"]
 
 [project.entry-points.'nomad.plugin']
+sintering = "nomad_plugin_fairmat.schema_packages:sintering"
 parser_entry_point = "nomad_plugin_fairmat.parsers:parser_entry_point"
 schema_package_entry_point = "nomad_plugin_fairmat.schema_packages:schema_package_entry_point"
 
