@@ -13,3 +13,5 @@ sintering = SinteringEntryPoint(
     name='Sintering',
     description='Schema package for describing a sintering process.',
 )
+
+schema_package_entry_point = sintering

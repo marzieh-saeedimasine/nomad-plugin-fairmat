@@ -1,0 +1,623 @@
+{
+  "data": {
+    "m_def": "nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+    "name": "test sintering",
+    "datetime": "2026-02-07T19:56:33.568857+00:00",
+    "data_file": "sintering_example.csv",
+    "steps": [
+      {
+        "name": "heating",
+        "duration": 1800.0,
+        "initial_temperature": 25.0,
+        "final_temperature": 300.0
+      },
+      {
+        "name": "hold",
+        "duration": 3600.0,
+        "initial_temperature": 300.0,
+        "final_temperature": 300.0
+      },
+      {
+        "name": "cooling",
+        "duration": 1800.0,
+        "initial_temperature": 300.0,
+        "final_temperature": 25.0
+      }
+    ]
+  },
+  "workflow2": {
+    "name": "test sintering"
+  },
+  "metadata": {
+    "entry_name": "test_sintering.archive.yaml",
+    "entry_type": "Sintering",
+    "mainfile": "/home/ubuntu/marzieh-sat/nomad-fairmat-distro-dev/packages/nomad-plugin-fairmat/tests/data/test_sintering.archive.yaml",
+    "text_search_contents": [
+      "heating",
+      "test sintering",
+      "hold",
+      "sintering_example.csv",
+      "cooling"
+    ],
+    "n_quantities": 31,
+    "quantities": [
+      "",
+      "data",
+      "data.data_file",
+      "data.datetime",
+      "data.name",
+      "data.steps",
+      "data.steps.duration",
+      "data.steps.final_temperature",
+      "data.steps.initial_temperature",
+      "data.steps.name",
+      "metadata",
+      "metadata.entry_name",
+      "metadata.entry_type",
+      "metadata.mainfile",
+      "metadata.quantities",
+      "metadata.section_defs",
+      "metadata.section_defs.definition_id",
+      "metadata.section_defs.definition_qualified_name",
+      "metadata.section_defs.used_directly",
+      "metadata.sections",
+      "results",
+      "results.eln",
+      "results.eln.methods",
+      "results.eln.names",
+      "results.eln.sections",
+      "results.properties",
+      "workflow2",
+      "workflow2.name"
+    ],
+    "sections": [
+      "nomad.datamodel.datamodel.EntryArchive",
+      "nomad.datamodel.datamodel.EntryMetadata",
+      "nomad.datamodel.metainfo.workflow.Workflow",
+      "nomad.datamodel.results.ELN",
+      "nomad.datamodel.results.Properties",
+      "nomad.datamodel.results.Results",
+      "nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+      "nomad_plugin_fairmat.schema_packages.sintering.TemperatureRamp"
+    ],
+    "section_defs": [
+      {
+        "definition_qualified_name": "nomad.datamodel.data.ArchiveSection",
+        "definition_id": "a4fc26727b8b3b1711ff8cea9896ac1910987509",
+        "used_directly": true
+      },
+      {
+        "definition_qualified_name": "nomad.datamodel.data.EntryData",
+        "definition_id": "486f476f18785f5f4bcbac10db7304d7de35636b",
+        "used_directly": true
+      },
+      {
+        "definition_qualified_name": "nomad.datamodel.datamodel.EntryArchive",
+        "definition_id": "6fc186e751acb9f7aea4d785dfbfb1a882918a69",
+        "used_directly": true
+      },
+      {
+        "definition_qualified_name": "nomad.datamodel.datamodel.EntryMetadata",
+        "definition_id": "089b7260031778a419dd5f905453a6ee10eb74b6",
+        "used_directly": true
+      },
+      {
+        "definition_qualified_name": "nomad.datamodel.metainfo.basesections.v1.Activity",
+        "definition_id": "26ae54d13c750e9326f8e0fca1129c36bb0d07b8",
+        "used_directly": false
+      },
+      {
+        "definition_qualified_name": "nomad.datamodel.metainfo.basesections.v1.ActivityStep",
+        "definition_id": "e0a6427de58e6274b151cdb377e218d1df89153d",
+        "used_directly": false
+      },
+      {
+        "definition_qualified_name": "nomad.datamodel.metainfo.basesections.v1.BaseSection",
+        "definition_id": "d543328c56c9ed17b5f40cc9fbb383293e51b9ac",
+        "used_directly": false
+      },
+      {
+        "definition_qualified_name": "nomad.datamodel.metainfo.basesections.v1.Process",
+        "definition_id": "a7bf38697254ea05eb4d2f17b4278b8fc8195c47",
+        "used_directly": true
+      },
+      {
+        "definition_qualified_name": "nomad.datamodel.metainfo.basesections.v1.ProcessStep",
+        "definition_id": "b1e43fdda69e5d9b2abd9b196f31887005fbe92a",
+        "used_directly": true
+      },
+      {
+        "definition_qualified_name": "nomad.datamodel.metainfo.workflow.Task",
+        "definition_id": "0aff7a298df5dcb6da4e05879103e52180302870",
+        "used_directly": true
+      },
+      {
+        "definition_qualified_name": "nomad.datamodel.metainfo.workflow.Workflow",
+        "definition_id": "81151ff3ce7e4f6807a047c9e2775d9a7514b334",
+        "used_directly": true
+      },
+      {
+        "definition_qualified_name": "nomad.datamodel.results.ELN",
+        "definition_id": "007663da7ce382ddfc731f92b5445a0532b06bf9",
+        "used_directly": true
+      },
+      {
+        "definition_qualified_name": "nomad.datamodel.results.Properties",
+        "definition_id": "231e82b671bf7a64d007f7f0eb46869cf0441793",
+        "used_directly": true
+      },
+      {
+        "definition_qualified_name": "nomad.datamodel.results.Results",
+        "definition_id": "240a855ffc7abf5dd6123f9bfd81f90c3e7ece05",
+        "used_directly": true
+      },
+      {
+        "definition_qualified_name": "nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+        "definition_id": "dc1d5a78e7ed3686b4a6943ee037a40303fde1d7",
+        "used_directly": true
+      },
+      {
+        "definition_qualified_name": "nomad_plugin_fairmat.schema_packages.sintering.TemperatureRamp",
+        "definition_id": "5a9d45e70e73a9fd0c6e8b5179b803cb11954c9d",
+        "used_directly": true
+      }
+    ],
+    "search_quantities": [
+      {
+        "id": "data.data_file#nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+        "definition": "nomad_plugin_fairmat.schema_packages.sintering.Sintering.data_file",
+        "path_archive": "data.data_file",
+        "segments": {
+          "1": {
+            "path": "data",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+              "nomad.datamodel.metainfo.basesections.v1.Process",
+              "nomad.datamodel.metainfo.basesections.v1.Activity",
+              "nomad.datamodel.metainfo.basesections.v1.BaseSection"
+            ]
+          },
+          "2": {
+            "path": "data_file",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.Sintering"
+            ]
+          }
+        },
+        "str_value": "sintering_example.csv"
+      },
+      {
+        "id": "data.steps.name#nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+        "definition": "nomad.datamodel.metainfo.basesections.v1.ActivityStep.name",
+        "path_archive": "data.steps.0.name",
+        "segments": {
+          "1": {
+            "path": "data",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+              "nomad.datamodel.metainfo.basesections.v1.Process",
+              "nomad.datamodel.metainfo.basesections.v1.Activity",
+              "nomad.datamodel.metainfo.basesections.v1.BaseSection"
+            ]
+          },
+          "2": {
+            "path": "steps",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.TemperatureRamp",
+              "nomad.datamodel.metainfo.basesections.v1.ProcessStep",
+              "nomad.datamodel.metainfo.basesections.v1.ActivityStep"
+            ]
+          },
+          "3": {
+            "path": "name",
+            "definitions": [
+              "nomad.datamodel.metainfo.basesections.v1.ActivityStep"
+            ]
+          }
+        },
+        "str_value": "heating"
+      },
+      {
+        "id": "data.steps.duration#nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+        "definition": "nomad.datamodel.metainfo.basesections.v1.ProcessStep.duration",
+        "path_archive": "data.steps.0.duration",
+        "segments": {
+          "1": {
+            "path": "data",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+              "nomad.datamodel.metainfo.basesections.v1.Process",
+              "nomad.datamodel.metainfo.basesections.v1.Activity",
+              "nomad.datamodel.metainfo.basesections.v1.BaseSection"
+            ]
+          },
+          "2": {
+            "path": "steps",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.TemperatureRamp",
+              "nomad.datamodel.metainfo.basesections.v1.ProcessStep",
+              "nomad.datamodel.metainfo.basesections.v1.ActivityStep"
+            ]
+          },
+          "3": {
+            "path": "duration",
+            "definitions": [
+              "nomad.datamodel.metainfo.basesections.v1.ProcessStep"
+            ]
+          }
+        },
+        "float_value": 1800.0
+      },
+      {
+        "id": "data.steps.initial_temperature#nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+        "definition": "nomad_plugin_fairmat.schema_packages.sintering.TemperatureRamp.initial_temperature",
+        "path_archive": "data.steps.0.initial_temperature",
+        "segments": {
+          "1": {
+            "path": "data",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+              "nomad.datamodel.metainfo.basesections.v1.Process",
+              "nomad.datamodel.metainfo.basesections.v1.Activity",
+              "nomad.datamodel.metainfo.basesections.v1.BaseSection"
+            ]
+          },
+          "2": {
+            "path": "steps",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.TemperatureRamp",
+              "nomad.datamodel.metainfo.basesections.v1.ProcessStep",
+              "nomad.datamodel.metainfo.basesections.v1.ActivityStep"
+            ]
+          },
+          "3": {
+            "path": "initial_temperature",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.TemperatureRamp"
+            ]
+          }
+        },
+        "float_value": 25.0
+      },
+      {
+        "id": "data.steps.final_temperature#nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+        "definition": "nomad_plugin_fairmat.schema_packages.sintering.TemperatureRamp.final_temperature",
+        "path_archive": "data.steps.0.final_temperature",
+        "segments": {
+          "1": {
+            "path": "data",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+              "nomad.datamodel.metainfo.basesections.v1.Process",
+              "nomad.datamodel.metainfo.basesections.v1.Activity",
+              "nomad.datamodel.metainfo.basesections.v1.BaseSection"
+            ]
+          },
+          "2": {
+            "path": "steps",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.TemperatureRamp",
+              "nomad.datamodel.metainfo.basesections.v1.ProcessStep",
+              "nomad.datamodel.metainfo.basesections.v1.ActivityStep"
+            ]
+          },
+          "3": {
+            "path": "final_temperature",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.TemperatureRamp"
+            ]
+          }
+        },
+        "float_value": 300.0
+      },
+      {
+        "id": "data.steps.name#nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+        "definition": "nomad.datamodel.metainfo.basesections.v1.ActivityStep.name",
+        "path_archive": "data.steps.1.name",
+        "segments": {
+          "1": {
+            "path": "data",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+              "nomad.datamodel.metainfo.basesections.v1.Process",
+              "nomad.datamodel.metainfo.basesections.v1.Activity",
+              "nomad.datamodel.metainfo.basesections.v1.BaseSection"
+            ]
+          },
+          "2": {
+            "path": "steps",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.TemperatureRamp",
+              "nomad.datamodel.metainfo.basesections.v1.ProcessStep",
+              "nomad.datamodel.metainfo.basesections.v1.ActivityStep"
+            ]
+          },
+          "3": {
+            "path": "name",
+            "definitions": [
+              "nomad.datamodel.metainfo.basesections.v1.ActivityStep"
+            ]
+          }
+        },
+        "str_value": "hold"
+      },
+      {
+        "id": "data.steps.duration#nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+        "definition": "nomad.datamodel.metainfo.basesections.v1.ProcessStep.duration",
+        "path_archive": "data.steps.1.duration",
+        "segments": {
+          "1": {
+            "path": "data",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+              "nomad.datamodel.metainfo.basesections.v1.Process",
+              "nomad.datamodel.metainfo.basesections.v1.Activity",
+              "nomad.datamodel.metainfo.basesections.v1.BaseSection"
+            ]
+          },
+          "2": {
+            "path": "steps",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.TemperatureRamp",
+              "nomad.datamodel.metainfo.basesections.v1.ProcessStep",
+              "nomad.datamodel.metainfo.basesections.v1.ActivityStep"
+            ]
+          },
+          "3": {
+            "path": "duration",
+            "definitions": [
+              "nomad.datamodel.metainfo.basesections.v1.ProcessStep"
+            ]
+          }
+        },
+        "float_value": 3600.0
+      },
+      {
+        "id": "data.steps.initial_temperature#nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+        "definition": "nomad_plugin_fairmat.schema_packages.sintering.TemperatureRamp.initial_temperature",
+        "path_archive": "data.steps.1.initial_temperature",
+        "segments": {
+          "1": {
+            "path": "data",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+              "nomad.datamodel.metainfo.basesections.v1.Process",
+              "nomad.datamodel.metainfo.basesections.v1.Activity",
+              "nomad.datamodel.metainfo.basesections.v1.BaseSection"
+            ]
+          },
+          "2": {
+            "path": "steps",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.TemperatureRamp",
+              "nomad.datamodel.metainfo.basesections.v1.ProcessStep",
+              "nomad.datamodel.metainfo.basesections.v1.ActivityStep"
+            ]
+          },
+          "3": {
+            "path": "initial_temperature",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.TemperatureRamp"
+            ]
+          }
+        },
+        "float_value": 300.0
+      },
+      {
+        "id": "data.steps.final_temperature#nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+        "definition": "nomad_plugin_fairmat.schema_packages.sintering.TemperatureRamp.final_temperature",
+        "path_archive": "data.steps.1.final_temperature",
+        "segments": {
+          "1": {
+            "path": "data",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+              "nomad.datamodel.metainfo.basesections.v1.Process",
+              "nomad.datamodel.metainfo.basesections.v1.Activity",
+              "nomad.datamodel.metainfo.basesections.v1.BaseSection"
+            ]
+          },
+          "2": {
+            "path": "steps",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.TemperatureRamp",
+              "nomad.datamodel.metainfo.basesections.v1.ProcessStep",
+              "nomad.datamodel.metainfo.basesections.v1.ActivityStep"
+            ]
+          },
+          "3": {
+            "path": "final_temperature",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.TemperatureRamp"
+            ]
+          }
+        },
+        "float_value": 300.0
+      },
+      {
+        "id": "data.steps.name#nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+        "definition": "nomad.datamodel.metainfo.basesections.v1.ActivityStep.name",
+        "path_archive": "data.steps.2.name",
+        "segments": {
+          "1": {
+            "path": "data",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+              "nomad.datamodel.metainfo.basesections.v1.Process",
+              "nomad.datamodel.metainfo.basesections.v1.Activity",
+              "nomad.datamodel.metainfo.basesections.v1.BaseSection"
+            ]
+          },
+          "2": {
+            "path": "steps",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.TemperatureRamp",
+              "nomad.datamodel.metainfo.basesections.v1.ProcessStep",
+              "nomad.datamodel.metainfo.basesections.v1.ActivityStep"
+            ]
+          },
+          "3": {
+            "path": "name",
+            "definitions": [
+              "nomad.datamodel.metainfo.basesections.v1.ActivityStep"
+            ]
+          }
+        },
+        "str_value": "cooling"
+      },
+      {
+        "id": "data.steps.duration#nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+        "definition": "nomad.datamodel.metainfo.basesections.v1.ProcessStep.duration",
+        "path_archive": "data.steps.2.duration",
+        "segments": {
+          "1": {
+            "path": "data",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+              "nomad.datamodel.metainfo.basesections.v1.Process",
+              "nomad.datamodel.metainfo.basesections.v1.Activity",
+              "nomad.datamodel.metainfo.basesections.v1.BaseSection"
+            ]
+          },
+          "2": {
+            "path": "steps",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.TemperatureRamp",
+              "nomad.datamodel.metainfo.basesections.v1.ProcessStep",
+              "nomad.datamodel.metainfo.basesections.v1.ActivityStep"
+            ]
+          },
+          "3": {
+            "path": "duration",
+            "definitions": [
+              "nomad.datamodel.metainfo.basesections.v1.ProcessStep"
+            ]
+          }
+        },
+        "float_value": 1800.0
+      },
+      {
+        "id": "data.steps.initial_temperature#nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+        "definition": "nomad_plugin_fairmat.schema_packages.sintering.TemperatureRamp.initial_temperature",
+        "path_archive": "data.steps.2.initial_temperature",
+        "segments": {
+          "1": {
+            "path": "data",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+              "nomad.datamodel.metainfo.basesections.v1.Process",
+              "nomad.datamodel.metainfo.basesections.v1.Activity",
+              "nomad.datamodel.metainfo.basesections.v1.BaseSection"
+            ]
+          },
+          "2": {
+            "path": "steps",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.TemperatureRamp",
+              "nomad.datamodel.metainfo.basesections.v1.ProcessStep",
+              "nomad.datamodel.metainfo.basesections.v1.ActivityStep"
+            ]
+          },
+          "3": {
+            "path": "initial_temperature",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.TemperatureRamp"
+            ]
+          }
+        },
+        "float_value": 300.0
+      },
+      {
+        "id": "data.steps.final_temperature#nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+        "definition": "nomad_plugin_fairmat.schema_packages.sintering.TemperatureRamp.final_temperature",
+        "path_archive": "data.steps.2.final_temperature",
+        "segments": {
+          "1": {
+            "path": "data",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+              "nomad.datamodel.metainfo.basesections.v1.Process",
+              "nomad.datamodel.metainfo.basesections.v1.Activity",
+              "nomad.datamodel.metainfo.basesections.v1.BaseSection"
+            ]
+          },
+          "2": {
+            "path": "steps",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.TemperatureRamp",
+              "nomad.datamodel.metainfo.basesections.v1.ProcessStep",
+              "nomad.datamodel.metainfo.basesections.v1.ActivityStep"
+            ]
+          },
+          "3": {
+            "path": "final_temperature",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.TemperatureRamp"
+            ]
+          }
+        },
+        "float_value": 25.0
+      },
+      {
+        "id": "data.name#nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+        "definition": "nomad.datamodel.metainfo.basesections.v1.BaseSection.name",
+        "path_archive": "data.name",
+        "segments": {
+          "1": {
+            "path": "data",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+              "nomad.datamodel.metainfo.basesections.v1.Process",
+              "nomad.datamodel.metainfo.basesections.v1.Activity",
+              "nomad.datamodel.metainfo.basesections.v1.BaseSection"
+            ]
+          },
+          "2": {
+            "path": "name",
+            "definitions": [
+              "nomad.datamodel.metainfo.basesections.v1.BaseSection"
+            ]
+          }
+        },
+        "str_value": "test sintering"
+      },
+      {
+        "id": "data.datetime#nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+        "definition": "nomad.datamodel.metainfo.basesections.v1.Activity.datetime",
+        "path_archive": "data.datetime",
+        "segments": {
+          "1": {
+            "path": "data",
+            "definitions": [
+              "nomad_plugin_fairmat.schema_packages.sintering.Sintering",
+              "nomad.datamodel.metainfo.basesections.v1.Process",
+              "nomad.datamodel.metainfo.basesections.v1.Activity",
+              "nomad.datamodel.metainfo.basesections.v1.BaseSection"
+            ]
+          },
+          "2": {
+            "path": "datetime",
+            "definitions": [
+              "nomad.datamodel.metainfo.basesections.v1.Activity"
+            ]
+          }
+        },
+        "datetime_value": "2026-02-07T19:56:33.568857+00:00"
+      }
+    ]
+  },
+  "results": {
+    "properties": {},
+    "eln": {
+      "sections": [
+        "Sintering"
+      ],
+      "names": [
+        "test sintering"
+      ],
+      "methods": [
+        "Sintering"
+      ]
+    }
+  }
+}
