@@ -1,18 +1,18 @@
 from nomad.config.models.plugins import ParserEntryPoint
-from pydantic import Field
 
 
-class NewParserEntryPoint(ParserEntryPoint):
-    parameter: int = Field(0, description='Custom configuration parameter')
+class SinteringParserEntryPoint(ParserEntryPoint):
+    """Entry point for the Sintering CSV parser."""
 
     def load(self):
-        from nomad_plugin_fairmat.parsers.parser import NewParser
+        from nomad_plugin_fairmat.parsers.sintering_parser import SinteringParser
 
-        return NewParser(**self.model_dump())
+        return SinteringParser(**self.dict())
 
 
-parser_entry_point = NewParserEntryPoint(
-    name='NewParser',
-    description='New parser entry point configuration.',
-    mainfile_name_re=r'.*\.newmainfilename',
+parser_entry_point = SinteringParserEntryPoint(
+    name='SinteringParser',
+    description='Parser for sintering process CSV files with temperature ramp data.',
+    mainfile_name_re=r'sintering.*\.csv',  # Match sintering-specific CSV files only
+    mainfile_mime_re=r'text/csv',
 )
